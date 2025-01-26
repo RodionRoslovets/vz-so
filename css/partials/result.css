@@ -1,0 +1,91 @@
+ .result-block {
+     display: none;
+ }
+
+ .result-block.active {
+     display: block;
+ }
+
+
+ .result-table__pagination {
+     display: none;
+     flex-flow: row nowrap;
+     gap: 10px;
+     height: 50px;
+     overflow: auto;
+     margin: 15px;
+ }
+
+ .result-table__pagination button {
+     border-radius: 0.625rem;
+     padding: 0.25rem 0.5rem;
+     background: var(--pink-btn);
+     height: 2rem;
+     cursor: pointer;
+     border: none;
+     transition: background 0.2s ease-out;
+ }
+
+ .result-table__pagination-dots {
+     height: 2rem;
+     display: flex;
+     align-items: flex-end;
+ }
+
+
+ .result-table__pagination button:hover,
+ .result-table__pagination button.open {
+     background: var(--pink-btn-hover);
+ }
+
+
+ .result-table__pagination-info {
+     display: none;
+ }
+
+ .result-menu {
+     display: flex;
+     flex-flow: row wrap;
+     gap: 1.5rem;
+     margin: 20px 0;
+ }
+
+ .result-menu .active {
+     display: flex;
+     background-color: var(--pink-btn-hover);
+ }
+
+
+ .result-menu__button {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 15px;
+     background: var(--pink-btn);
+     transition: background 0.2s ease-out;
+     border: none;
+     outline: none;
+     flex: 1;
+     cursor: pointer;
+     border-radius: 0.625rem;
+ }
+
+ .result-menu__button:hover {
+     background: var(--pink-btn-hover);
+ }
+
+ .result-graths {
+     display: none !important;
+     text-align: center;
+ }
+
+ .result-graths canvas {
+     margin: 25px 0 45px;
+     background: var(--white);
+ }
+
+ @media (max-width:890px) {
+     .result-menu__button {
+         flex: 1 0 48%;
+     }
+ }

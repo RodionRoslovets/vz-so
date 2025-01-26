@@ -1,0 +1,14 @@
+.information-block {
+
+}
+
+.information-block__oportunity-sheet {
+    margin-bottom: 40px;
+}
+
+.information-block__example {
+    font-style: italic;
+    opacity: 0.8;
+
+    margin-top: 20px;
+}

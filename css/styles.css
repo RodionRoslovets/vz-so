@@ -1,0 +1,20 @@
+@import "partials/normalize.css";
+@import "partials/colors.css";
+@import "partials/common.css";
+@import "partials/parameters-table.css";
+@import "partials/parameters-form.css";
+@import "partials/parametrs-grade-input.css";
+@import "partials/result.css";
+@import "partials/errno-field.css";
+@import "partials/information-block.css";
+@import "partials/result-grade-p-table.css";
+
+@import "partials/styleguide.css";
+
+/* fonts */
+body {
+    font-family: "Exo 2", sans-serif;
+    font-style: normal;
+    min-height: 100vh;
+    font-weight: 400;
+}

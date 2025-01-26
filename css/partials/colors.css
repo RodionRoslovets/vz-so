@@ -1,0 +1,14 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --gray-d9: #D9D9D9;
+    --gray-d9-t8: rgb(217, 217, 217, 0.8);
+    --gray-e6: #e6e6e6;
+    --gray-ec: #eceaea;
+    --pink-btn: #08e6d6;
+    --pink-btn-hover: #08e6d6;
+    --cell-label: #a5f4ff;
+    --grad-1: linear-gradient(90deg, rgba(240, 219, 255, 0.802) 0%, rgba(255, 199, 244, 0.796) 51%, rgba(255, 201, 234, 0.849) 100%);
+    --grad-2: linear-gradient(180deg, #01ADA1 20%, #004742 100%);
+    ;
+}

@@ -1,0 +1,36 @@
+.parameters-form input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.parameters-form .submit {
+  width: 12.5rem;
+  background: var(--pink-btn);
+  padding: 12px;
+  margin: 20px 0 30px;
+  transition: background 0.2s ease-out;
+  border: none;
+  cursor: pointer;
+  align-self: flex-start;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parameters-form .submit .loader {
+  display: none;
+}
+
+.parameters-form .submit:hover {
+  background: var(--pink-btn-hover);
+}
+
+.parameters-form .submit.submit--active .loader {
+  display: flex;
+}
+
+.parameters-form .submit.submit--active span {
+  display: none;
+}

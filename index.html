@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- exo 2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="max-width main-wrapper">
+        <img class="logo" src="./img/logo.jpg"/>
+        <form class="parameters-form js_parameters-form">
+            <div class="common-grid">
+                <div class="common-index">
+                    <div class="tooltip-outer">
+                        <label for="number">Показатели</label>
+                        <div class="tooltip-wrapper">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="10" cy="10" r="10" fill="#D9D9D9"/>
+                                <path d="M8.97727 12.7273V12.6591C8.98485 11.9356 9.06061 11.3598 9.20455 10.9318C9.34848 10.5038 9.55303 10.1572 9.81818 9.89205C10.0833 9.62689 10.4015 9.38258 10.7727 9.15909C10.9962 9.02273 11.197 8.86174 11.375 8.67614C11.553 8.48674 11.6932 8.26894 11.7955 8.02273C11.9015 7.77652 11.9545 7.50379 11.9545 7.20455C11.9545 6.83333 11.8674 6.51136 11.6932 6.23864C11.5189 5.96591 11.286 5.75568 10.9943 5.60795C10.7027 5.46023 10.3788 5.38636 10.0227 5.38636C9.71212 5.38636 9.41288 5.45076 9.125 5.57955C8.83712 5.70833 8.59659 5.91098 8.40341 6.1875C8.21023 6.46401 8.09848 6.82576 8.06818 7.27273H6.63636C6.66667 6.62879 6.83333 6.07765 7.13636 5.61932C7.44318 5.16098 7.84659 4.81061 8.34659 4.56818C8.85038 4.32576 9.40909 4.20455 10.0227 4.20455C10.6894 4.20455 11.2689 4.33712 11.7614 4.60227C12.2576 4.86742 12.6402 5.23106 12.9091 5.69318C13.1818 6.1553 13.3182 6.68182 13.3182 7.27273C13.3182 7.68939 13.2538 8.06629 13.125 8.40341C13 8.74053 12.8182 9.04167 12.5795 9.30682C12.3447 9.57197 12.0606 9.80682 11.7273 10.0114C11.3939 10.2197 11.1269 10.4394 10.9261 10.6705C10.7254 10.8977 10.5795 11.1686 10.4886 11.483C10.3977 11.7973 10.3485 12.1894 10.3409 12.6591V12.7273H8.97727ZM9.70455 16.0909C9.42424 16.0909 9.18371 15.9905 8.98295 15.7898C8.7822 15.589 8.68182 15.3485 8.68182 15.0682C8.68182 14.7879 8.7822 14.5473 8.98295 14.3466C9.18371 14.1458 9.42424 14.0455 9.70455 14.0455C9.98485 14.0455 10.2254 14.1458 10.4261 14.3466C10.6269 14.5473 10.7273 14.7879 10.7273 15.0682C10.7273 15.2538 10.6799 15.4242 10.5852 15.5795C10.4943 15.7348 10.3712 15.8598 10.2159 15.9545C10.0644 16.0455 9.89394 16.0909 9.70455 16.0909Z" fill="white"/>
+                            </svg>
+                            <div class="tooltip">Укажите количество показателей</div>
+                        </div>
+                    </div>
+                    <div class="common__button-wrapper common__button-number-wrapper">
+                        <button type="button" class="common__button-button common__button-button--decrease">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                                <rect x="7" y="12.001" width="1" height="9" transform="rotate(-90 7 12.001)" fill="#151833" fill-opacity="0.46"/>
+                            </svg>
+                        </button>
+                        <input type="number" id="number" name="number" class="js_parametrs-number-input common__input" min="3" step="1">
+                        <button type="button" class="common__button-button common__button-button--increase">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                                <rect x="11" y="7.00104" width="1" height="4" fill="#151833" fill-opacity="0.46"/>
+                                <rect x="11" y="12.001" width="1" height="4" fill="#151833" fill-opacity="0.46"/>
+                                <rect x="7" y="12.001" width="1" height="9" transform="rotate(-90 7 12.001)" fill="#151833" fill-opacity="0.46"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="number-names">
+                        <p>Имена показателей</p>
+                        <div class="number-names-list"></div>
+                    </div>
+                </div>
+                <div class="common-accuracy">
+                    <div class="common-accuracy-wrapper">
+                        <div class="tooltip-outer">
+                            <label for="number">Точность</label>
+                            <div class="tooltip-wrapper">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="10" r="10" fill="#D9D9D9"/>
+                                    <path d="M8.97727 12.7273V12.6591C8.98485 11.9356 9.06061 11.3598 9.20455 10.9318C9.34848 10.5038 9.55303 10.1572 9.81818 9.89205C10.0833 9.62689 10.4015 9.38258 10.7727 9.15909C10.9962 9.02273 11.197 8.86174 11.375 8.67614C11.553 8.48674 11.6932 8.26894 11.7955 8.02273C11.9015 7.77652 11.9545 7.50379 11.9545 7.20455C11.9545 6.83333 11.8674 6.51136 11.6932 6.23864C11.5189 5.96591 11.286 5.75568 10.9943 5.60795C10.7027 5.46023 10.3788 5.38636 10.0227 5.38636C9.71212 5.38636 9.41288 5.45076 9.125 5.57955C8.83712 5.70833 8.59659 5.91098 8.40341 6.1875C8.21023 6.46401 8.09848 6.82576 8.06818 7.27273H6.63636C6.66667 6.62879 6.83333 6.07765 7.13636 5.61932C7.44318 5.16098 7.84659 4.81061 8.34659 4.56818C8.85038 4.32576 9.40909 4.20455 10.0227 4.20455C10.6894 4.20455 11.2689 4.33712 11.7614 4.60227C12.2576 4.86742 12.6402 5.23106 12.9091 5.69318C13.1818 6.1553 13.3182 6.68182 13.3182 7.27273C13.3182 7.68939 13.2538 8.06629 13.125 8.40341C13 8.74053 12.8182 9.04167 12.5795 9.30682C12.3447 9.57197 12.0606 9.80682 11.7273 10.0114C11.3939 10.2197 11.1269 10.4394 10.9261 10.6705C10.7254 10.8977 10.5795 11.1686 10.4886 11.483C10.3977 11.7973 10.3485 12.1894 10.3409 12.6591V12.7273H8.97727ZM9.70455 16.0909C9.42424 16.0909 9.18371 15.9905 8.98295 15.7898C8.7822 15.589 8.68182 15.3485 8.68182 15.0682C8.68182 14.7879 8.7822 14.5473 8.98295 14.3466C9.18371 14.1458 9.42424 14.0455 9.70455 14.0455C9.98485 14.0455 10.2254 14.1458 10.4261 14.3466C10.6269 14.5473 10.7273 14.7879 10.7273 15.0682C10.7273 15.2538 10.6799 15.4242 10.5852 15.5795C10.4943 15.7348 10.3712 15.8598 10.2159 15.9545C10.0644 16.0455 9.89394 16.0909 9.70455 16.0909Z" fill="white"/>
+                                </svg>
+                                <div class="tooltip">Укажите точность, с&nbsp;которой будут вычисляться весовые коэффициенты</div>
+                            </div>
+                        </div>
+                        <div class="common__button-wrapper common__button-number-wrapper">
+                            <button disabled type="button" class="common__button-button common__button-button--decrease">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                                    <rect x="7" y="12.001" width="1" height="9" transform="rotate(-90 7 12.001)" fill="#151833" fill-opacity="0.46"/>
+                                </svg>
+                            </button>
+                            <input value="0.05" readonly type="number" id="step" name="step" class="js_parametrs-step-input common__input" min="0" step="0.01">
+                            <button disabled type="button" class="common__button-button common__button-button--increase">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                                    <rect x="11" y="7.00104" width="1" height="4" fill="#151833" fill-opacity="0.46"/>
+                                    <rect x="11" y="12.001" width="1" height="4" fill="#151833" fill-opacity="0.46"/>
+                                    <rect x="7" y="12.001" width="1" height="9" transform="rotate(-90 7 12.001)" fill="#151833" fill-opacity="0.46"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="common-limits">
+                        <div class="tooltip-outer">
+                            <label for="number">Ограничения</label>
+                            <div class="tooltip-wrapper">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="10" r="10" fill="#D9D9D9"/>
+                                    <path d="M8.97727 12.7273V12.6591C8.98485 11.9356 9.06061 11.3598 9.20455 10.9318C9.34848 10.5038 9.55303 10.1572 9.81818 9.89205C10.0833 9.62689 10.4015 9.38258 10.7727 9.15909C10.9962 9.02273 11.197 8.86174 11.375 8.67614C11.553 8.48674 11.6932 8.26894 11.7955 8.02273C11.9015 7.77652 11.9545 7.50379 11.9545 7.20455C11.9545 6.83333 11.8674 6.51136 11.6932 6.23864C11.5189 5.96591 11.286 5.75568 10.9943 5.60795C10.7027 5.46023 10.3788 5.38636 10.0227 5.38636C9.71212 5.38636 9.41288 5.45076 9.125 5.57955C8.83712 5.70833 8.59659 5.91098 8.40341 6.1875C8.21023 6.46401 8.09848 6.82576 8.06818 7.27273H6.63636C6.66667 6.62879 6.83333 6.07765 7.13636 5.61932C7.44318 5.16098 7.84659 4.81061 8.34659 4.56818C8.85038 4.32576 9.40909 4.20455 10.0227 4.20455C10.6894 4.20455 11.2689 4.33712 11.7614 4.60227C12.2576 4.86742 12.6402 5.23106 12.9091 5.69318C13.1818 6.1553 13.3182 6.68182 13.3182 7.27273C13.3182 7.68939 13.2538 8.06629 13.125 8.40341C13 8.74053 12.8182 9.04167 12.5795 9.30682C12.3447 9.57197 12.0606 9.80682 11.7273 10.0114C11.3939 10.2197 11.1269 10.4394 10.9261 10.6705C10.7254 10.8977 10.5795 11.1686 10.4886 11.483C10.3977 11.7973 10.3485 12.1894 10.3409 12.6591V12.7273H8.97727ZM9.70455 16.0909C9.42424 16.0909 9.18371 15.9905 8.98295 15.7898C8.7822 15.589 8.68182 15.3485 8.68182 15.0682C8.68182 14.7879 8.7822 14.5473 8.98295 14.3466C9.18371 14.1458 9.42424 14.0455 9.70455 14.0455C9.98485 14.0455 10.2254 14.1458 10.4261 14.3466C10.6269 14.5473 10.7273 14.7879 10.7273 15.0682C10.7273 15.2538 10.6799 15.4242 10.5852 15.5795C10.4943 15.7348 10.3712 15.8598 10.2159 15.9545C10.0644 16.0455 9.89394 16.0909 9.70455 16.0909Z" fill="white"/>
+                                </svg>
+                                <div class="tooltip">Введите в&nbsp;виде строгих и/или нестрогих неравенств ограничения для весовых коэффициентов, отражающие значимость показателей в&nbsp;линейной свертке</div>
+                            </div>
+                        </div>
+                        <div class="common__parameters-wrapper">
+                            <div class="common__filters__block">
+                                <div class="common__parameters-block">
+                                    <input type="text" class="js_parametrs-step-input common__input common__input--condition common__input--condition--left">
+                                    <select disabled class="common__select">
+                                        <option value=">" selected>></option>
+                                    </select>
+                                    <input type="text" class="js_parametrs-step-input common__input common__input--condition common__input--condition--right">
+                                    <button type="button" class="common__button-button common__button-button--increase filters__bt--add">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                                            <rect x="11" y="7.00104" width="1" height="4" fill="#151833" fill-opacity="0.46"/>
+                                            <rect x="11" y="12.001" width="1" height="4" fill="#151833" fill-opacity="0.46"/>
+                                            <rect x="7" y="12.001" width="1" height="9" transform="rotate(-90 7 12.001)" fill="#151833" fill-opacity="0.46"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="text" id="filter" name="filter" class="js_parametrs-filter-input" placeholder="Введите ограничения (по упорядочеванию показателей)">
+                    </div>
+                </div>
+                
+                <div class="common-objects">
+                    <div class="parametrs-grade-input js_parametrs-grade-input">
+                        <div class=".parametrs-grade-input-title">
+                            <div class="tooltip-outer">
+                                <label for="number">Объекты</label>
+                                <div class="tooltip-wrapper">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="10" cy="10" r="10" fill="#D9D9D9"/>
+                                        <path d="M8.97727 12.7273V12.6591C8.98485 11.9356 9.06061 11.3598 9.20455 10.9318C9.34848 10.5038 9.55303 10.1572 9.81818 9.89205C10.0833 9.62689 10.4015 9.38258 10.7727 9.15909C10.9962 9.02273 11.197 8.86174 11.375 8.67614C11.553 8.48674 11.6932 8.26894 11.7955 8.02273C11.9015 7.77652 11.9545 7.50379 11.9545 7.20455C11.9545 6.83333 11.8674 6.51136 11.6932 6.23864C11.5189 5.96591 11.286 5.75568 10.9943 5.60795C10.7027 5.46023 10.3788 5.38636 10.0227 5.38636C9.71212 5.38636 9.41288 5.45076 9.125 5.57955C8.83712 5.70833 8.59659 5.91098 8.40341 6.1875C8.21023 6.46401 8.09848 6.82576 8.06818 7.27273H6.63636C6.66667 6.62879 6.83333 6.07765 7.13636 5.61932C7.44318 5.16098 7.84659 4.81061 8.34659 4.56818C8.85038 4.32576 9.40909 4.20455 10.0227 4.20455C10.6894 4.20455 11.2689 4.33712 11.7614 4.60227C12.2576 4.86742 12.6402 5.23106 12.9091 5.69318C13.1818 6.1553 13.3182 6.68182 13.3182 7.27273C13.3182 7.68939 13.2538 8.06629 13.125 8.40341C13 8.74053 12.8182 9.04167 12.5795 9.30682C12.3447 9.57197 12.0606 9.80682 11.7273 10.0114C11.3939 10.2197 11.1269 10.4394 10.9261 10.6705C10.7254 10.8977 10.5795 11.1686 10.4886 11.483C10.3977 11.7973 10.3485 12.1894 10.3409 12.6591V12.7273H8.97727ZM9.70455 16.0909C9.42424 16.0909 9.18371 15.9905 8.98295 15.7898C8.7822 15.589 8.68182 15.3485 8.68182 15.0682C8.68182 14.7879 8.7822 14.5473 8.98295 14.3466C9.18371 14.1458 9.42424 14.0455 9.70455 14.0455C9.98485 14.0455 10.2254 14.1458 10.4261 14.3466C10.6269 14.5473 10.7273 14.7879 10.7273 15.0682C10.7273 15.2538 10.6799 15.4242 10.5852 15.5795C10.4943 15.7348 10.3712 15.8598 10.2159 15.9545C10.0644 16.0455 9.89394 16.0909 9.70455 16.0909Z" fill="white"/>
+                                    </svg>
+                                    <div class="tooltip">Введите значения единичных показателей x<sub>i</sub> для объектов</div>
+                                    </div>
+                                </div>
+                             </div>
+                        <div class="parameters-grade-table-block js-parameters-grade-table-block"></div>
+                        <div class="parametrs-grade-input__number-control js_parametrs-grade-input-number-control">
+                            <button type="button" class="js_parametrs-grade-input-number-control-remove common__button-button objects-remove">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                                    <rect x="7" y="12.001" width="1" height="9" transform="rotate(-90 7 12.001)" fill="#151833" fill-opacity="0.46"/>
+                                </svg>
+                            </button>
+                            <button type="button" class="js_parametrs-grade-input-number-control-add common__button-button objects-add">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                                    <rect x="11" y="7.00104" width="1" height="4" fill="#151833" fill-opacity="0.46"/>
+                                    <rect x="11" y="12.001" width="1" height="4" fill="#151833" fill-opacity="0.46"/>
+                                    <rect x="7" y="12.001" width="1" height="9" transform="rotate(-90 7 12.001)" fill="#151833" fill-opacity="0.46"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="objects-names">
+                        <p>Имена объектов</p>
+                        <div class="objects-names-list">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="common-text">
+                    <button type="button" class="common-text-btn">
+                        <span>Описание/Инструкция</span>
+                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                            <rect x="11" y="7.00104" width="1" height="4" fill="#151833" fill-opacity="0.46"/>
+                            <rect x="11" y="12.001" width="1" height="4" fill="#151833" fill-opacity="0.46"/>
+                            <rect x="7" y="12.001" width="1" height="9" transform="rotate(-90 7 12.001)" fill="#151833" fill-opacity="0.46"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="common-totals">
+                    <div>Общее количество наборов: <span class="js_parametrs-kits-number">-</span></div>
+                    <div>Число допустимых наборов: <span class="js_parametrs-kits-end-number">-</span></div>
+                </div>
+            </div>
+            <button type="submit" class="js_parametrs-form-submit submit">
+                <span>Рассчитать</span>
+                <div class="loader">
+                    <div class="loader-bar"></div>
+                    <div class="loader-bar"></div>
+                    <div class="loader-bar"></div>
+                </div>
+            </button>
+        </form>
+        <div class="result-block js_result-block">
+            <div class="result-table " data-menu-name="table">
+                <div class="parameters-table js_parameters-table"></div>
+                <div class="result-table__pagination js_result-table-pagination">
+                </div>
+                <div class="result-table__pagination-info js_this-page-info"></div>
+            </div>
+            <div class="result-grade-p-table js_result-grade-p-table" data-menu-name="grade-p">
+            </div>
+            <div class="result-graths js_result-graths active" data-menu-name="grath">
+            </div>
+        </div>
+        <div class="errno-field js_errno-field max-width"></div>
+    </div>
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+.parameters-table {
+    width: 100%;
+    overflow: auto;
+}
+
+.parameters-table table {
+    margin: 10px 0;
+    text-align: end;
+    border-collapse: collapse;
+}
+
+.parameters-table tbody tr:not(:last-child) {
+    display: none;
+}
+
+.parameters-table tbody tr:last-child {
+    border-bottom: 1px solid black;
+}
+
+.parameters-table td {
+    padding: 10px 15px;
+    text-align: center;
+    position: relative;
+}
+
+.parameters-table td:nth-child(2n) {
+    background: whitesmoke;
+}
+
+.parameters-table tbody tr:nth-child(even) td {
+    background: var(--pink-btn);
+}
+
+.parameters-table tbody tr:nth-child(odd) td {
+    background: var(--green-c4);
+}
+
+.parameters-table thead td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.parameters-table thead td:nth-child(2n),
+.parameters-table thead td:nth-child(1) {
+    background: none;
+}
+
+.parameters-table thead tr td {
+    background: var(--pink-btn-hover) !important;
+}
+
+.cell-label {
+    font-size: 10px;
+    background: var(--cell-label);
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    right: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+}
+
+.parameters-table__row td {
+    background: var(--pink-btn-hover) !important;
+}

@@ -1,0 +1,15 @@
+.result-grade-p-table {
+    display: none;
+    width: 100%;
+    overflow: auto;
+}
+
+.result-grade-p-table table {
+    margin: 10px 0;
+    text-align: end;
+}
+
+.result-grade-p-table td {
+    padding: 10px 15px;
+    background: var(--pink-btn);
+}

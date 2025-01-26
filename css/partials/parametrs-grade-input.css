@@ -1,0 +1,25 @@
+.parametrs-grade-input {
+    display: none;
+    position: relative;
+}
+
+.parameters-grade-table-block {
+    overflow: auto;
+    padding-bottom: 5px;
+}
+
+.parameters-grade-table {
+    padding-right: 22px;
+}
+
+.parametrs-grade-input__number-control {
+    display: flex;
+    align-items: center;
+    gap: 0.3125rem;
+}
+
+.parametrs-grade-input__number-control button {
+    width: 2.5rem;
+    border-radius: 50%;
+    border: 1px solid var(--gray-e6);
+}
