@@ -172,7 +172,11 @@ function resultTableDraw(gradeExist) {
     average.forEach((item, i) => {
       let parameters =
         i == parametersNumber ? { style: `border-left: ${borderStyle};` } : {};
-      addTableItem(averageRow, item, parameters);
+      addTableItem(
+        averageRow,
+        i >= parametersNumber ? (item * 10).toFixed(1) : item,
+        parameters
+      );
     });
 
     tableBody.append(averageRow);

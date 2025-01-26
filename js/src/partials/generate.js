@@ -50,8 +50,8 @@ function addAverage() {
     });
   }
 
-  console.log("addAverage parametersKitsArray", parametersKitsArray);
-  console.log("addAverage average", average);
+  // console.log("addAverage parametersKitsArray", parametersKitsArray);
+  // console.log("addAverage average", average);
 }
 
 function getAverage() {
@@ -69,10 +69,10 @@ function decimalPlacesCount() {
 function toInteger() {
   parameterDecimalPlaces = decimalPlacesCount();
   parameterDecimalCount = 10 ** parameterDecimalPlaces;
-  console.log("toInteger parameterDecimalCount", parameterDecimalCount);
+  // console.log("toInteger parameterDecimalCount", parameterDecimalCount);
 
   parameterKitSumm *= parameterDecimalCount;
-  console.log("toInteger parameterKitSumm", parameterKitSumm);
+  // console.log("toInteger parameterKitSumm", parameterKitSumm);
   parameterStep *= parameterDecimalCount;
 }
 
@@ -85,7 +85,7 @@ function toDouble(parametersKit) {
 function parametersKitsGenerateSettings(settingsForm) {
   // set data from filters block to hidden input
   setFiltersToField();
-  console.log("старт расчетов");
+  // console.log("старт расчетов");
 
   // parameters to generate parameters kit
   parametersNumber = settingsForm.querySelector(
@@ -205,35 +205,35 @@ function parametersKitsArrayGenerateAfter() {
 function parametersKitsArrayGenerate() {
   parametersKitsArrayPrepareToGenerate();
 
-  console.log("parametersKitsGenerateNumber", parametersKitsGenerateNumber);
+  // console.log("parametersKitsGenerateNumber", parametersKitsGenerateNumber);
   for (let j = 0; j < parametersKitsGenerateNumber; j++) {
-    console.log(`проход генерации: ${j + 1} из ${parametersKitsGenerateNumber}, 
-		количество элементов массива генерации на этом этапе: ${
-      parametersKitsArrayGeneratePull.length
-    }`);
+    // console.log(`проход генерации: ${j + 1} из ${parametersKitsGenerateNumber},
+    // количество элементов массива генерации на этом этапе: ${
+    //   parametersKitsArrayGeneratePull.length
+    // }`);
     const parametersKitsArrayGeneratePullLength =
       parametersKitsArrayGeneratePull.length;
-    console.log(
-      "parametersKitsArrayGeneratePullLength",
-      parametersKitsArrayGeneratePullLength
-    );
-    console.log(
-      "parametersKitsArrayGeneratePull",
-      parametersKitsArrayGeneratePull
-    );
+    // console.log(
+    //   "parametersKitsArrayGeneratePullLength",
+    //   parametersKitsArrayGeneratePullLength
+    // );
+    // console.log(
+    //   "parametersKitsArrayGeneratePull",
+    //   parametersKitsArrayGeneratePull
+    // );
 
     for (let p = 0; p < parametersKitsArrayGeneratePullLength; p++) {
       let KitArray = parametersKitsArrayGeneratePull.shift();
-      console.log("KitArray", KitArray);
+      // console.log("KitArray", KitArray);
       if (KitArray[0] <= 0) continue;
       for (let i = 1; i < KitArray.length; i++) {
         KitArray = parametersKitArrayPrepareBefore(KitArray, i);
-        console.log("after parametersKitArrayPrepareBefore", KitArray);
+        // console.log("after parametersKitArrayPrepareBefore", KitArray);
 
         parametersKitArrayAdd(KitArray);
-        console.log("after parametersKitArrayAdd ", KitArray);
+        // console.log("after parametersKitArrayAdd ", KitArray);
         KitArray = parametersKitArrayPrepareAfter(KitArray, i);
-        console.log("after parametersKitArrayPrepareAfter ", KitArray);
+        // console.log("after parametersKitArrayPrepareAfter ", KitArray);
       }
     }
   }
@@ -257,7 +257,7 @@ async function submitToGenerate(settingsForm, errorField, parametersTable) {
   const finish = performance.mark("конец");
 
   performance.measure("итого", "начало", "конец");
-  console.log(performance.getEntriesByName("итого")[0].duration);
+  // console.log(performance.getEntriesByName("итого")[0].duration);
   performance.clearMeasures();
   performance.clearMarks();
 }
