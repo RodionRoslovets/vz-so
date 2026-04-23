@@ -10,7 +10,7 @@
 }
 
 .parameters-table tbody tr:not(:last-child) {
-    display: none;
+    /* display: none; */
 }
 
 .parameters-table tbody tr:last-child {
